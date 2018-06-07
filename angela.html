@@ -3,10 +3,28 @@
 <head>
 	<title>交换</title>
 </head>
+<script>
+	window.onload = function () {
+		var aInps = document.getElementsByTagName('input')
+		var oBtn = document.getElementById('btn')
+
+
+		oBtn.onclick = function () {
+
+			var tmp = aInps[0].value
+
+			aInps[0].value = aInps[1].value
+
+			aInps[1].value = tmp
+
+		}
+
+
+	}
+</script>
 <body>
-哈哈哈哈哈哈
-呼呼呼
-
-
+	<input type="text">
+	<input type="text">
+	<button id="btn">交换</button>
 </body>
 </html>
